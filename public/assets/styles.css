@@ -1,0 +1,44 @@
+/* public/assets/styles.css */
+
+/* TailwindCSS utility classes will be used via CDN or build, but tu peux ajouter ici des styles custom */
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #111827;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.copy-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 0.2em;
+}
+
+/* Boutons principaux */
+.btn-main {
+  @apply w-full text-lg bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-6 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply w-full text-lg bg-gray-600 hover:bg-gray-500 text-white font-semibold py-4 px-6 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105;
+}
+
+/* Responsive grid pour les questions */
+.answers-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
